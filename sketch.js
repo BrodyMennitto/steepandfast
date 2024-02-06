@@ -4,4 +4,5 @@ function setup() {
 
 function draw() {
   background(220);
+  triangle(78, 92, 58, 20, 86, 75);
 }
