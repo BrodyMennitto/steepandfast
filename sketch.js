@@ -1,11 +1,17 @@
-let nums = [510, 515, 520, 535, 537, 542, 545, 560, 564, 573, 576];
+let numCircles = 17;
 let circW = [65, 90, 170, 280, 360, 400]
 let circH = [20, 30, 50, 70, 80, 90];
-//let numCircles = 5;
 
 function setup()
 {
-  createCanvas(500, 700);
+createCanvas(500, 700);
+
+
+fill(0, 25);
+noStroke();
+for(var i = 0; i < numCircles; i++){
+  ellipse(random(190, 200), random(205, 219), 10);
+}
 } 
 
 function draw(){
@@ -14,34 +20,38 @@ background(45);
 fill(255);
 beginShape();
 vertex(290, 0);
-bezierVertex(300, 495, 217, 317, 200, 470);
+bezierVertex(300, 495, 217, 317, 225, 600);
 vertex(0, 0);
 endShape();
 
-ellipse(200, 485, 10);
-ellipse(200, 545, 10);
-ellipse(200, 577, 10);
-
-
-fill(255, 50);
+fill(0, 150);
 noStroke();
-for(var i = 0; i < nums.length; i++){
-  ellipse(200, nums[i], 10)
+ellipse(10, 7, 10);
+
+ellipse(54, 124, 10);
+ellipse(64, 152, 10);
+ellipse(197, 500, 10);
+ellipse(215, 555, 10)
+ellipse(220, 560, 10);
+
+ellipse(220, 573, 10);
+ellipse(248, 372, 10);
+ellipse(282, 25, 10);
+
+noStroke();
+for(var i = 0; i < numCircles; i++){
+  ellipse(random(208, 224), random(495, 540), 10);
 }
-fill(255, 200);
-ellipse(131, 326, 10);
-ellipse(138, 342, 10)
-
-ellipse(300, 70, 10);
-
 
 fill(255, 15);
+stroke(255);
+strokeWeight(.5);
 for(var i = 0; i < 6; i++){
-ellipse (200, 645, circW[i], circH[i]);
+ellipse (225, 595, circW[i], circH[i]);
 }
 
 
-//noLoop();
+noLoop();
 
 
 
@@ -68,8 +78,8 @@ ellipse (200, 645, circW[i], circH[i]);
 //   vertex(100, 100);
 // endShape(CLOSE);
 
-// fill("Red");
-// textSize(32);
-// textAlign(LEFT);
-// text("(" + floor(mouseX) + ", " + floor(mouseY) + ")", mouseX, mouseY);
+//  fill("Red");
+//  textSize(32);
+//  textAlign(LEFT);
+//  text("(" + floor(mouseX) + ", " + floor(mouseY) + ")", mouseX, mouseY);
  }
