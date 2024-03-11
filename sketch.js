@@ -1,4 +1,4 @@
-let numCircles = 17;
+let numCircles = 37;
 let circW = [65, 90, 170, 280, 360, 400]
 let circH = [20, 30, 50, 70, 80, 90];
 
@@ -26,21 +26,22 @@ endShape();
 
 fill(0, 150);
 noStroke();
-ellipse(10, 7, 10);
+ellipse(15, 7, 20);
 
-ellipse(54, 124, 10);
-ellipse(64, 152, 10);
-ellipse(197, 500, 10);
-ellipse(215, 555, 10)
-ellipse(220, 560, 10);
+ellipse(60, 124, 20);
+ellipse(69, 152, 20);
+ellipse(197, 500, 20);
+ellipse(215, 515, 20);
+ellipse(220, 560, 20);
 
-ellipse(220, 573, 10);
-ellipse(248, 372, 10);
-ellipse(282, 25, 10);
+
+ellipse(220, 573, 20);
+ellipse(248, 372, 20);
+ellipse(282, 25, 20);
 
 noStroke();
 for(var i = 0; i < numCircles; i++){
-  ellipse(random(208, 224), random(495, 540), 10);
+  ellipse(random(195, 224), random(4, 540), 20);
 }
 
 fill(255, 15);
