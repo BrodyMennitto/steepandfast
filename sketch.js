@@ -68,8 +68,8 @@ ellipse (200, 645, circW[i], circH[i]);
 //   vertex(100, 100);
 // endShape(CLOSE);
 
-fill("Red");
-textSize(32);
-textAlign(LEFT);
-text("(" + floor(mouseX) + ", " + floor(mouseY) + ")", mouseX, mouseY);
-}
+// fill("Red");
+// textSize(32);
+// textAlign(LEFT);
+// text("(" + floor(mouseX) + ", " + floor(mouseY) + ")", mouseX, mouseY);
+// }
